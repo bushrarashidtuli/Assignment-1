@@ -21,6 +21,13 @@
   color: white;
 }
 
+#other-btn{
+  border: 1px solid white;
+  background: none;
+  padding: 16px;
+  color: white;
+}
+
 /* main style */
 
 header{
@@ -50,4 +57,24 @@ nav .menu a{
   line-height: 152%;
   font-weight: 500;
   text-decoration: none;
+}
+
+.banner{
+  background: url("../assets/hero-bg.png");
+  background-size: cover;
+  width: 100%;
+  color: white;
+  gap: 32px;
+}
+
+.banner-content{
+  width: 85%;
+  max-width: 1360px;
+  padding: 115px 120px;
+  text-align: center;
+}
+
+#banner-btn{
+  display: flex;
+  gap: 16px;
 }
