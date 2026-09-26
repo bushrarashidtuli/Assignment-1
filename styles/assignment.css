@@ -6,7 +6,7 @@
 
 /* shared style */
 
-.font-inter-<uniquifier> {
+.font-inter {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
 }
@@ -21,11 +21,42 @@
   color: white;
 }
 
-#other-btn{
+.other-btn{
   border: 1px solid white;
   background: none;
   padding: 16px;
   color: white;
+}
+
+/* Container styling for the pill shape */
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #ffffff;
+  padding: 6px 16px;
+  border-radius: 9999px; /* Fully rounded pill shape */
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* Green dot indicator */
+.status-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #22c55e; /* Green color */
+  border-radius: 50%;
+  /* Optional: Adds the soft outer glow visible in your screenshot */
+  box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.2); 
+}
+
+/* Text styling */
+.status-text {
+  color: #15803d; /* Dark green font */
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
 }
 
 /* main style */
@@ -59,22 +90,43 @@ nav .menu a{
   text-decoration: none;
 }
 
-.banner{
-  background: url("../assets/hero-bg.png");
-  background-size: cover;
-  width: 100%;
-  color: white;
-  gap: 32px;
+#banner {
+    background-image: url("../assets/hero-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.banner-content{
-  width: 85%;
-  max-width: 1360px;
-  padding: 115px 120px;
-  text-align: center;
+#banner .banner-content {
+    padding-top: 115px;
+    padding-bottom: 115px;
+    width: 85%;
+    max-width: 1360px;
+    color: white;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    text-align: center;
 }
 
-#banner-btn{
-  display: flex;
-  gap: 16px;
+#banner .banner-content .heading{
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 84px;
+  margin: 0 auto;
+}
+
+#banner .banner-heading {
+    color: #30b060;
+}
+
+#banner .banner-content .banner-text{
+  font-size: 18px;
+  line-height: 24px;
 }
